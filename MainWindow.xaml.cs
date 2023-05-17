@@ -67,5 +67,15 @@ namespace ExamplePracWork13
             else
                 DtgListBooks.ItemsSource = ClassHelp.Shopes;
         }
+
+        private void RbUp_Checked(object sender, RoutedEventArgs e)
+        {
+            DtgListBooks.ItemsSource = ClassHelp.Shopes.OrderBy(x => x.Amount).ToList();
+        }
+
+        private void RbDown_Checked(object sender, RoutedEventArgs e)
+        {
+            DtgListBooks.ItemsSource = ClassHelp.Shopes.OrderByDescending(x => x.Amount).ToList();
+        }
     }
 }

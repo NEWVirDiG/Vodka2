@@ -19,7 +19,7 @@
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Center">
                 <TextBlock Text="Название магазина"/>
-                <TextBox Name="shop"/>
+                <ComboBox Name="Cmbshop" Width="200" Height="40" Margin="5"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Center">

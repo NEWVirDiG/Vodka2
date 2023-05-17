@@ -23,7 +23,7 @@ namespace ExamplePracWork13
         public WindowAdd()
         {
             InitializeComponent();
-           
+            Cmbshop.ItemsSource = ClassHelp.Shouses;
         }
 
         private void BtnAddReader_Click(object sender, RoutedEventArgs e)
@@ -31,7 +31,7 @@ namespace ExamplePracWork13
             ClassPrice Shops = new ClassPrice()
             {
                 Names = names.Text,
-                Shop = shop.Text,
+                Shop = Cmbshop.Text,
                 Price = price.Text,
                 Amount = amount.Text,
             };

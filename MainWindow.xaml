@@ -17,21 +17,43 @@
         -->
         <StackPanel Orientation="Vertical"
                     VerticalAlignment="Center">
-            <Button Name="BtnAdd" Content="Добавить"
-                    Width="100"
+            <Button Name="BtnAdd" Content="Добавить" 
+                    Width="130"
                     Height="30"
                     Click="BtnAdd_Click"/>
-            <TextBlock Width="100" 
+            <TextBlock Width="130" Height="20" FontSize="12"
                        Text="Поиск"/>
-            <TextBox Width="100"
+            <TextBox Width="130" Margin="0" FontSize="12"
                        Name="TxtSearch"
                        TextChanged="TxtSearch_TextChanged"/>
-            <TextBlock Width="120"
+            <Button Name="BtnSave"
+                    Click="BtnSave_Click"
+                    Width="130"
+                    Height="30"
+                    Content="Сохранить как"
+                    Margin="0"/>
+            <TextBlock Width="130" Height="20" FontSize="12"
                        Text="Фильтр по магазину"/>
             <ComboBox Name="CmbFiltr"
                 SelectedValuePath="{Binding Shop}"
                       SelectionChanged="CmbFiltr_SelectionChanged"/>
+            <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    Height="130" Width="130"
+                    Margin="5">
+                <TextBlock Text="Сортировка по товарам" FontSize="12" Margin="5"
+                           Width="120"/>
+                <RadioButton Content="от А до Я"
+                             Margin="5"
+                             Name="RbUp"
+                             Checked="RbUp_Checked"/>
+                <RadioButton Content="от Я до А"
+                             Margin="5"
+                             Name="RbDown"
+                             Checked="RbDown_Checked"/>
+            </StackPanel>
         </StackPanel>
+        
         <!--Центральная часть 
         Задание
         Таблица-->
