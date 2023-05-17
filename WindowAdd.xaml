@@ -1,0 +1,40 @@
+﻿<Window x:Class="ExamplePracWork13.WindowAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamplePracWork13"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="AddAmounts" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <TextBlock Text="Название товара"/>
+                <TextBox Name="names"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <TextBlock Text="Название магазина"/>
+                <TextBox Name="shop"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <TextBlock Text="Стоимость товара"/>
+                <TextBox Name="price"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <TextBlock Text="Количество товара"/>
+                <TextBox Name="amount"/>
+            </StackPanel>
+           
+            <Button Content="Добавить" 
+                    Name="BtnAddReader"
+                    Click="BtnAddReader_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
